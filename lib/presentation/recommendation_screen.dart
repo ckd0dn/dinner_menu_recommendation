@@ -29,6 +29,42 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     'assets/images/pig_hocks.jpg',
     'assets/images/bossam.jpg',
     'assets/images/chicken.jpg',
+
+    'assets/images/black_noodle.jpg',
+    'assets/images/champon.jpg',
+    'assets/images/gganpungi.jpg',
+    'assets/images/grilled_rice.jpg',
+    'assets/images/Guobaorou.jpg',
+    'assets/images/Lamb_skewers.jpg',
+    'assets/images/Malatang.png',
+    'assets/images/palbocha.jpg',
+    'assets/images/tangsuyouk.jpg',
+    'assets/images/yangjangpi.jpg',
+    'assets/images/yousansle.jpg',
+
+    'assets/images/barbecue.jpg',
+    'assets/images/hamburger.jpg',
+    'assets/images/hot-dog.jpg',
+    'assets/images/pasta.jpg',
+    'assets/images/pizza.jpg',
+    'assets/images/rice.jpg',
+    'assets/images/salad.jpg',
+    'assets/images/sandwich.jpg',
+    'assets/images/steak.jpg',
+    'assets/images/toast.jpg',
+    'assets/images/udon.jpg',
+    'assets/images/garaage.jpg',
+    'assets/images/odeng.jpg',
+    'assets/images/okkonomiyaggi.jpg',
+    'assets/images/ramen.jpg',
+    'assets/images/raw-fish.jpg',
+    'assets/images/shabushabu.jpg',
+    'assets/images/soba.jpg',
+    'assets/images/sushi.jpg',
+    'assets/images/tako.jpg',
+
+    'assets/images/vetnam-noodle.jpg',
+    'assets/images/kare.jpg',
   ];
 
   Map<String, String> menuName = {
@@ -50,13 +86,50 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     'assets/images/pig_hocks.jpg' : '족발',
     'assets/images/bossam.jpg' : '보쌈',
     'assets/images/chicken.jpg' : '치킨',
+
+    'assets/images/black_noodle.jpg' : '짜장면',
+    'assets/images/champon.jpg' : '짬뽕',
+    'assets/images/gganpungi.jpg' : '깐풍기',
+    'assets/images/grilled_rice.jpg' : '볶음밥',
+    'assets/images/Guobaorou.jpg' : '꿔바로우',
+    'assets/images/Lamb_skewers.jpg' : '양꼬치',
+    'assets/images/Malatang.png' : '마라탕',
+    'assets/images/palbocha.jpg' : '팔보채',
+    'assets/images/tangsuyouk.jpg' : '탕수육',
+    'assets/images/yangjangpi.jpg' : '양장피',
+    'assets/images/yousansle.jpg' : '유산슬',
+
+    'assets/images/barbecue.jpg' : '바베큐',
+    'assets/images/hamburger.jpg' : '햄버거',
+    'assets/images/hot-dog.jpg' : '핫도그',
+    'assets/images/pasta.jpg' : '파스타',
+    'assets/images/pizza.jpg' : '피자',
+    'assets/images/rice.jpg' : '리조또',
+    'assets/images/salad.jpg' : '샐러드',
+    'assets/images/sandwich.jpg' : '샌드위치',
+    'assets/images/steak.jpg' : '스테이크',
+    'assets/images/toast.jpg' : '토스트',
+
+    'assets/images/udon.jpg' : '우동',
+    'assets/images/garaage.jpg' : '가라아게',
+    'assets/images/odeng.jpg' : '오뎅',
+    'assets/images/okkonomiyaggi.jpg' : '오꼬노미야끼',
+    'assets/images/ramen.jpg' : '라멘',
+    'assets/images/raw-fish.jpg' : '회',
+    'assets/images/shabushabu.jpg' : '샤브샤브',
+    'assets/images/soba.jpg' : '소바',
+    'assets/images/sushi.jpg' : '초밥',
+    'assets/images/tako.jpg' : '타코야끼',
+
+    'assets/images/vetnam-noodle.jpg' : '베트남',
+    'assets/images/kare.jpg' : '카레',
   };
 
   String selectedMenu = '';
 
    randomMenu() {
     menu.shuffle();
-    print(menu);
+
     selectedMenu = menu.first;
   }
 

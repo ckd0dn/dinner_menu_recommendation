@@ -2,40 +2,39 @@ import 'package:flutter/material.dart';
 
 import '../uitls/color.dart';
 
-class ChineseFoodScreen extends StatefulWidget {
-  const ChineseFoodScreen({Key? key}) : super(key: key);
+class JapaneseFoodScreen extends StatefulWidget {
+  const JapaneseFoodScreen({Key? key}) : super(key: key);
 
   @override
-  State<ChineseFoodScreen> createState() => _ChineseFoodScreenState();
+  State<JapaneseFoodScreen> createState() => _JapaneseFoodScreenState();
 }
 
-class _ChineseFoodScreenState extends State<ChineseFoodScreen> {
+class _JapaneseFoodScreenState extends State<JapaneseFoodScreen> {
+
   List<String> menu = [
-    'assets/images/black_noodle.jpg',
-    'assets/images/champon.jpg',
-    'assets/images/gganpungi.jpg',
-    'assets/images/grilled_rice.jpg',
-    'assets/images/Guobaorou.jpg',
-    'assets/images/Lamb_skewers.jpg',
-    'assets/images/Malatang.png',
-    'assets/images/palbocha.jpg',
-    'assets/images/tangsuyouk.jpg',
-    'assets/images/yangjangpi.jpg',
-    'assets/images/yousansle.jpg',
+    'assets/images/udon.jpg',
+    'assets/images/garaage.jpg',
+    'assets/images/odeng.jpg',
+    'assets/images/okkonomiyaggi.jpg',
+    'assets/images/ramen.jpg',
+    'assets/images/raw-fish.jpg',
+    'assets/images/shabushabu.jpg',
+    'assets/images/soba.jpg',
+    'assets/images/sushi.jpg',
+    'assets/images/tako.jpg',
   ];
 
   Map<String, String> menuName = {
-    'assets/images/black_noodle.jpg' : '짜장면',
-    'assets/images/champon.jpg' : '짬뽕',
-    'assets/images/gganpungi.jpg' : '깐풍기',
-    'assets/images/grilled_rice.jpg' : '볶음밥',
-    'assets/images/Guobaorou.jpg' : '꿔바로우',
-    'assets/images/Lamb_skewers.jpg' : '양꼬치',
-    'assets/images/Malatang.png' : '마라탕',
-    'assets/images/palbocha.jpg' : '팔보채',
-    'assets/images/tangsuyouk.jpg' : '탕수육',
-    'assets/images/yangjangpi.jpg' : '양장피',
-    'assets/images/yousansle.jpg' : '유산슬',
+    'assets/images/udon.jpg' : '우동',
+    'assets/images/garaage.jpg' : '가라아게',
+    'assets/images/odeng.jpg' : '오뎅',
+    'assets/images/okkonomiyaggi.jpg' : '오꼬노미야끼',
+    'assets/images/ramen.jpg' : '라멘',
+    'assets/images/raw-fish.jpg' : '회',
+    'assets/images/shabushabu.jpg' : '샤브샤브',
+    'assets/images/soba.jpg' : '소바',
+    'assets/images/sushi.jpg' : '초밥',
+    'assets/images/tako.jpg' : '타코야끼',
   };
 
 

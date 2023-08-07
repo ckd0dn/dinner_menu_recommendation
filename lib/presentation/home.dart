@@ -1,4 +1,5 @@
 import 'package:dinner_menu_recommendation/presentation/chinese_food_screen.dart';
+import 'package:dinner_menu_recommendation/presentation/japanese_food_screen.dart';
 import 'package:dinner_menu_recommendation/presentation/korean_food_screen.dart';
 import 'package:dinner_menu_recommendation/presentation/recommendation_screen.dart';
 import 'package:dinner_menu_recommendation/presentation/western_food_screen.dart';
@@ -139,24 +140,29 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
-                Container(
-                    alignment: Alignment.center,
-                    width: 150,
-                    height: 150,
-                    decoration: const BoxDecoration(
-                        color: Color.fromRGBO(249, 251, 231, 100),
-                        borderRadius: BorderRadius.all(Radius.circular(30))
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                            width: 100,
-                            height: 100,
-                            child: Image.asset('assets/images/sushi.png')),
-                        const Text("일식", style: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),),
-                      ],
-                    )
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const JapaneseFoodScreen()));
+                  },
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: 150,
+                      height: 150,
+                      decoration: const BoxDecoration(
+                          color: Color.fromRGBO(249, 251, 231, 100),
+                          borderRadius: BorderRadius.all(Radius.circular(30))
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                              width: 100,
+                              height: 100,
+                              child: Image.asset('assets/images/sushi.png')),
+                          const Text("일식", style: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),),
+                        ],
+                      )
+                  ),
                 ),
 
               ],
